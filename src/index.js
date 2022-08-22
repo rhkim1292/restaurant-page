@@ -1,5 +1,7 @@
 import "./style.css";
 import homeLoad from "./home-load.js";
+import menuLoad from "./menu-load.js";
+import contactLoad from "./contact-load.js";
 
 const loadIndexLayout = (() => {
     const _header = document.createElement("header");
@@ -34,4 +36,49 @@ const loadIndexLayout = (() => {
         _header,
         _contentElement
     );
+
+    function getHomeBtn() {
+        return _homeBtn;
+    }
+
+    function getMenuBtn() {
+        return _menuBtn;
+    }
+
+    function getContactBtn() {
+        return _contactBtn;
+    }
+
+    function getContentElement() {
+        return _contentElement;
+    }
+
+    return {
+        getHomeBtn,
+        getMenuBtn,
+        getContactBtn,
+        getContentElement,
+    }
+})();
+
+const eventHandler = (() => {
+    const _homeBtn = loadIndexLayout.getHomeBtn();
+    const _menuBtn = loadIndexLayout.getMenuBtn();
+    const _contactBtn = loadIndexLayout.getContactBtn();
+    const _contentElement = loadIndexLayout.getContentElement();
+
+    _homeBtn.addEventListener("click", (e) => {
+        _contentElement.innerHTML = "";
+        homeLoad(_contentElement);
+    });
+
+    _menuBtn.addEventListener("click", (e) => {
+        _contentElement.innerHTML = "";
+        menuLoad(_contentElement);
+    });
+
+    _contactBtn.addEventListener("click", (e) => {
+        _contentElement.innerHTML = "";
+        contactLoad(_contentElement);
+    })
 })();

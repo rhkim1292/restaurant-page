@@ -1,6 +1,6 @@
 export default function loadPage(parent) {
 	const _contentHeadline = document.createElement("h1");
-	_contentHeadline.textContent = "Menu";
+	_contentHeadline.textContent = "Contact Us";
 
 	// const _contentRestaurantImg = new Image();
 	// _contentRestaurantImg.classList.add("main-restaurant-img");
