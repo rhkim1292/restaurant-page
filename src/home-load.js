@@ -1,9 +1,6 @@
 import RestaurantImg from "./restaurant.jpg";
 
-export default function loadPage() {
-	const _contentElement = document.createElement("div");
-    _contentElement.id = "content";
-
+export default function loadPage(parent) {
 	const _contentHeadline = document.createElement("h1");
 	_contentHeadline.textContent = "Welcome to Foodify";
 
@@ -15,11 +12,9 @@ export default function loadPage() {
 	_contentDescription.textContent =
 		"Our restaurant has the loveliest interior design and the finest cuisine one can imagine!";
 
-	_contentElement.append(
+	parent.append(
         _contentHeadline,
         _contentRestaurantImg,
         _contentDescription
     );
-
-    document.body.appendChild(_contentElement);
 }
