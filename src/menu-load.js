@@ -28,13 +28,5 @@ export default function loadPage(parent) {
 		_entreeItemImg
 	);
 
-	// const _contentRestaurantImg = new Image();
-	// _contentRestaurantImg.classList.add("main-restaurant-img");
-	// _contentRestaurantImg.src = RestaurantImg;
-
-	// const _contentDescription = document.createElement("h3");
-	// _contentDescription.textContent =
-	// 	"Our restaurant has the loveliest interior design and the finest cuisine one can imagine!";
-
 	parent.append(_contentHeadline, _entreeSectionHeader, _entreeItem);
 }

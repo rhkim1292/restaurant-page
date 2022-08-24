@@ -32,9 +32,11 @@ const loadIndexLayout = (() => {
 
 	const _footer = document.createElement("footer");
 	_footer.innerHTML =
-		"Home restaurant image by&nbsp;<a href='https://unsplash.com/@shawnanggg'>" +
+		"<p>Home restaurant image by&nbsp;<a href='https://unsplash.com/@shawnanggg'>" +
 		"@shawnangg</a>&nbsp;on&nbsp;<a href='https://unsplash.com'>&nbsp;" +
-		"Unsplash.com</a>";
+		"Unsplash.com</a><br>Discover Food image by&nbsp;" +
+		"<a href='https://unsplash.com/@lvnatikk'>@lvnatikk</a>&nbsp;on&nbsp;" +
+		"<a href='https://unsplash.com'>&nbsp;Unsplash.com</a></p>";
 	document.body.append(_header, _contentElement, _footer);
 
 	function getHomeBtn() {

@@ -2,15 +2,11 @@ export default function loadPage(parent) {
 	const _contentHeadline = document.createElement("h1");
 	_contentHeadline.textContent = "Contact Us";
 
-	// const _contentRestaurantImg = new Image();
-	// _contentRestaurantImg.classList.add("main-restaurant-img");
-	// _contentRestaurantImg.src = RestaurantImg;
+	const _contactEntry = document.createElement("div");
 
-	// const _contentDescription = document.createElement("h3");
-	// _contentDescription.textContent =
-	// 	"Our restaurant has the loveliest interior design and the finest cuisine one can imagine!";
+	_contactEntry.id = "contactEntry1";
+	_contactEntry.innerHTML = "<h3>First Foodify Restaurant</h3>" +
+		"<p>Randy H Kim<br>213-101-1337<br>randy@foodify.biz</p>";
 
-	parent.append(
-        _contentHeadline
-    );
+	parent.append(_contentHeadline, _contactEntry);
 }

@@ -110,6 +110,23 @@ div#content div#entreeItem1 img {
     text-align: center;
 }
 
+div#content div#contactEntry1 {
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+    width: 280px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+div#content div#contactEntry1 h3 {
+	margin-top: 0;
+}
+
+div#content div#contactEntry1 p {
+	text-align: center;
+}
+
 footer {
 	background-color: #f1f1f1;
 	color: #838383;
